@@ -1,0 +1,10 @@
+REPLACE CONDITIONAL DISPATCHER WITH COMMAND
+Conditional logic is used to dispatch requests and execute actions.
+
+Create a Command for each action. Store the Commands
+in a collection and replace the conditional logic with
+code to fetch and execute Commands.
+
+https://kakimotonline.com/2009/02/21/refactoring-to-command-pattern/
+
+Conditional logic is used to dispatch requests and execute actions. Create a Command for each action. Store the Commands in a collection and replace the conditional logic with code to fetch and execute Commands.
