@@ -2,9 +2,9 @@ package com.cdk.gist.strectural.adapter;
 
 public class EmployeeLdapAdapter implements Employee {
 
-	private EmployeeLdap employeeLdap;
+	private EmployeeLdapImpl employeeLdap;
 
-	public EmployeeLdapAdapter(EmployeeLdap employeeLdap) {
+	public EmployeeLdapAdapter(EmployeeLdapImpl employeeLdap) {
 		super();
 		this.employeeLdap = employeeLdap;
 	}

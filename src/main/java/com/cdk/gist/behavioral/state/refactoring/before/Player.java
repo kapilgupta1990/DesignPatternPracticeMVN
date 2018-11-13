@@ -2,25 +2,23 @@ package com.cdk.gist.behavioral.state.refactoring.before;
 
 public class Player {
 
-	public void toggle(State state){
-		
-		if(state.getState().equals("on")){
-			play();
-		}
-		if(state.getState().equals("off")){
-			stop();
-		}
-		if(state.getState().equals("standby")){
-			standby();
-		}
+	private String playerName;
+	private State state;
+
+	public Player(String playerName) {
+		this.playerName = playerName;
 	}
-	private void play(){
-		System.out.println("Play");
+
+	public void setPlayerName(String playerName) {
+		this.playerName = playerName;
 	}
-	private void stop(){
-		System.out.println("stop");
+
+	public String getPlayerName() {
+		return playerName;
 	}
-	private void standby(){
-		System.out.println("stand by");
+
+	public void setState(State state) {
+		state.execute();
+
 	}
 }

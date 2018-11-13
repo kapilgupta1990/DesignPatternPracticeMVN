@@ -1,22 +1,13 @@
 package com.cdk.gist.behavioral.state.refactoring.before;
 
-public class State {
+public abstract class State {
 
-	private Player player;
-	private String state;
+	protected Player player;
 
 	public State(Player player) {
-		super();
 		this.player = player;
 	}
 
-	public String getState() {
-		return state;
-	}
+	abstract protected void execute();
 
-	public void setState(String state) {
-		this.state = state;
-		player.toggle(this);
-	}
-	
 }

@@ -14,7 +14,7 @@ public class EmployeeClient {
 		//Employee employeeeFromLdap = new EmployeeLdap("5678", "gupta", "ravi", "ravi.gupta@cdk.com");
 
 		
-		EmployeeLdap employeeeFromLdap = new EmployeeLdap("5678", "gupta", "ravi", "ravi.gupta@cdk.com");
+		EmployeeLdapImpl employeeeFromLdap = new EmployeeLdapImpl("5678", "gupta", "ravi", "ravi.gupta@cdk.com");
 		employeeList.add(new EmployeeLdapAdapter(employeeeFromLdap));
 		
 		
